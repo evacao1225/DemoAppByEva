@@ -1,0 +1,11 @@
+applications:
+- path: javaCloudantWorkloadSchedulerApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: DemoAppByEva
+  host: DemoAppByEva
+  disk_quota: 1024M
+  services:
+  - DemoAppByEva-cloudantNoSQLDB
+  - DemoAppByEva-WorkloadScheduler
